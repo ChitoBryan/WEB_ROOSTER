@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rooster Pizza &amp; Grill - Hero &amp; History</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Hanken+Grotesk:wght@400..700&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css?v=4" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#4e1800",
+                      "on-secondary-fixed": "#271900",
+                      "on-background": "#e5e2e1",
+                      "surface-container-low": "#1c1b1b",
+                      "surface-tint": "#ffb3af",
+                      "on-error": "#690005",
+                      "on-primary-fixed": "#410005",
+                      "primary-container": "#ff5355",
+                      "on-surface": "#e5e2e1",
+                      "on-secondary-container": "#d7b374",
+                      "on-primary": "#68000d",
+                      "on-tertiary": "#5a1c00",
+                      "on-primary-fixed-variant": "#930017",
+                      "tertiary": "#ffb599",
+                      "secondary-fixed-dim": "#e7c181",
+                      "ash-white": "#F5F5F5",
+                      "charcoal-gray": "#2D2D2D",
+                      "surface-container": "#20201f",
+                      "surface-bright": "#393939",
+                      "surface-container-lowest": "#0e0e0e",
+                      "secondary-container": "#5e4510",
+                      "on-tertiary-fixed": "#370e00",
+                      "primary": "#ffb3af",
+                      "primary-fixed-dim": "#ffb3af",
+                      "on-secondary-fixed-variant": "#5c420e",
+                      "tertiary-fixed-dim": "#ffb599",
+                      "surface": "#131313",
+                      "tertiary-fixed": "#ffdbce",
+                      "secondary": "#e7c181",
+                      "on-surface-variant": "#e7bcb9",
+                      "background": "#0e0e0e",
+                      "tertiary-container": "#f16522",
+                      "ember-glow": "rgba(242, 101, 34, 0.2)",
+                      "on-secondary": "#422d00",
+                      "inverse-primary": "#ed1c32",
+                      "surface-container-high": "#2a2a2a",
+                      "outline-variant": "#5d3f3d",
+                      "surface-dim": "#131313",
+                      "secondary-fixed": "#ffdea8",
+                      "surface-variant": "#353535",
+                      "error": "#ffb4ab",
+                      "on-tertiary-fixed-variant": "#7f2b00",
+                      "inverse-on-surface": "#313030",
+                      "outline": "#ae8785",
+                      "surface-container-highest": "#353535",
+                      "error-container": "#93000a",
+                      "inverse-surface": "#e5e2e1",
+                      "on-primary-container": "#5c000a",
+                      "primary-fixed": "#ffdad7",
+                      "on-error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "24px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "container-max": "1600px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Permanent Marker", "cursive"
+                      ],
+                      "headline-lg-mobile": [
+                              "Permanent Marker", "cursive"
+                      ],
+                      "label-md": [
+                              "Bricolage Grotesque"
+                      ],
+                      "body-lg": [
+                              "Bricolage Grotesque"
+                      ],
+                      "headline-xl": [
+                              "Permanent Marker", "cursive"
+                      ],
+                      "headline-lg": [
+                              "Permanent Marker", "cursive"
+                      ],
+                      "body-md": [
+                              "Bricolage Grotesque"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "72px",
+                              {
+                                      "lineHeight": "80px",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 w-full z-50 bg-background/95 dark:bg-background/95 backdrop-blur-md border-b border-outline/20 h-24">
+<div class="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="flex items-center flex-shrink-0" href="#inicio" aria-label="Rooster Pizza &amp; Grill home">
+<img class="h-20 w-auto object-contain" src="assets/img/Logo_Rooster.png" alt="Rooster Pizza &amp; Grill logo"/>
+</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="nav-underline text-on-surface-variant hover:text-inverse-primary transition-colors duration-300 text-label-md font-label-md" href="#inicio" data-en="Home">Inicio</a>
+<a class="nav-underline text-on-surface-variant hover:text-inverse-primary transition-colors duration-300 text-label-md font-label-md" href="#menu">Menu</a>
+<a class="nav-underline text-on-surface-variant hover:text-inverse-primary transition-colors duration-300 text-label-md font-label-md" href="#ubicacion" data-en="Location">Ubicación</a>
+<a class="nav-underline text-on-surface-variant hover:text-inverse-primary transition-colors duration-300 text-label-md font-label-md" href="#resenas" data-en="Reviews">Reseñas</a>
+<a class="nav-underline text-on-surface-variant hover:text-inverse-primary transition-colors duration-300 text-label-md font-label-md" href="#contacto" data-en="Contact">Contacto</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="flex items-center space-x-1 border border-outline/30 rounded-full px-3 py-1">
+<button id="lang-es" onclick="setLang('es')" class="text-sm font-bold text-ash-white transition-colors cursor-pointer">ES</button>
+<span class="text-on-surface-variant text-sm">|</span>
+<button id="lang-en" onclick="setLang('en')" class="text-sm text-on-surface-variant hover:text-ash-white transition-colors cursor-pointer">EN</button>
+</div>
+<a href="https://stevenbalto.github.io/prototipoFrontend/" target="_blank" rel="noopener noreferrer" class="btn-lift hidden md:inline-block bg-inverse-primary text-ash-white px-6 py-2 rounded font-label-md text-label-md hover:bg-inverse-primary/90 transition-all shadow-[0_0_15px_rgba(237,28,50,0.3)]" data-en="Order Now">
+  Pedir Ahora
+</a>
+<!-- Hamburguesa - solo mobile -->
+<button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px] cursor-pointer flex-shrink-0" aria-label="Abrir menú">
+<span class="ham-line block w-6 h-[2px] bg-white rounded transition-all duration-300 origin-center"></span>
+<span class="ham-line block w-6 h-[2px] bg-white rounded transition-all duration-300"></span>
+<span class="ham-line block w-6 h-[2px] bg-white rounded transition-all duration-300 origin-center"></span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Menú mobile desplegable -->
+<div id="mobile-menu" class="mobile-menu-panel fixed top-24 left-0 right-0 z-40 bg-background/98 backdrop-blur-md border-b border-outline/20">
+<div class="px-6 py-6 flex flex-col space-y-1 max-w-container-max mx-auto">
+<a class="mobile-nav-link text-on-surface-variant hover:text-inverse-primary transition-colors py-3 text-lg border-b border-outline/10" href="#inicio" data-en="Home">Inicio</a>
+<a class="mobile-nav-link text-on-surface-variant hover:text-inverse-primary transition-colors py-3 text-lg border-b border-outline/10" href="#menu">Menu</a>
+<a class="mobile-nav-link text-on-surface-variant hover:text-inverse-primary transition-colors py-3 text-lg border-b border-outline/10" href="#ubicacion" data-en="Location">Ubicación</a>
+<a class="mobile-nav-link text-on-surface-variant hover:text-inverse-primary transition-colors py-3 text-lg border-b border-outline/10" href="#resenas" data-en="Reviews">Reseñas</a>
+<a class="mobile-nav-link text-on-surface-variant hover:text-inverse-primary transition-colors py-3 text-lg border-b border-outline/10" href="#contacto" data-en="Contact">Contacto</a>
+<a href="https://stevenbalto.github.io/prototipoFrontend/" target="_blank" rel="noopener noreferrer" class="btn-lift mobile-nav-link mt-4 bg-inverse-primary text-ash-white text-center px-6 py-3 rounded font-bold uppercase tracking-wider hover:bg-inverse-primary/90 transition-all shadow-[0_0_15px_rgba(237,28,50,0.3)]" data-en="Order Now">Pedir Ahora</a>
+</div>
+</div>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative w-full pb-16 min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-24" id="inicio">
+<!-- Background Texture/Image -->
+<div class="absolute inset-0 z-0 bg-background">
+<div class="absolute inset-0 hero-texture opacity-60 mix-blend-overlay" data-alt="Dark, moody, rough charcoal texture, simulating a hot grill or pizza oven interior, deep blacks and subtle grey highlights, high resolution, photorealistic."></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-start">
+<div class="flex flex-col items-start space-y-6 max-w-xl">
+<h1 class="text-headline-lg-mobile md:text-headline-xl font-headline-lg-mobile md:font-headline-xl text-ash-white leading-tight drop-shadow-lg">
+<span data-en="Pizza, Meat & Pasta,">Pizza, Carne y Pasta,</span> <br/>
+<span class="text-inverse-primary relative inline-block">
+<span data-en="Authentic Flavor">Sabor Auténtico</span>
+<div class="absolute inset-0 bg-inverse-primary/20 blur-2xl -z-10 rounded-full"></div>
+</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-md" data-en="No shortcuts: real wood, real flavor. The passion of doing things differently, in every dish that comes out of our kitchen.">
+                        Nada de vueltas: leña de verdad, sabor de verdad. La pasión de hacer las cosas distinto, en cada plato que sale de nuestra cocina.
+                    </p>
+<a href="https://stevenbalto.github.io/prototipoFrontend/" target="_blank" rel="noopener noreferrer" class="btn-lift mt-4 bg-inverse-primary text-ash-white px-8 py-4 rounded-md font-label-md text-label-md uppercase tracking-wider hover:bg-inverse-primary/90 transition-all duration-300 shadow-[0_0_20px_rgba(237,28,50,0.4)] flex items-center space-x-2 group">
+<span data-en="Order Now">Pedir Ahora</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="local_fire_department">local_fire_department</span>
+</a>
+</div>
+<!-- Hero Carousel -->
+<div class="relative h-[400px] md:h-[600px] w-full flex items-center justify-center">
+<div class="absolute w-3/4 h-3/4 bg-inverse-primary/20 blur-[100px] rounded-full z-0"></div>
+<div class="hero-carousel relative z-10 w-full h-full rounded-2xl overflow-hidden shadow-2xl">
+<div class="hero-slide active"><img src="assets/img/Pizza1.jpg" alt="Pizza" class="w-full h-full object-cover"/></div>
+<div class="hero-slide"><img src="assets/img/Pizza2.jpg" alt="Pizza" class="w-full h-full object-cover"/></div>
+<div class="hero-slide"><img src="assets/img/Pizza3.jpg" alt="Pizza" class="w-full h-full object-cover"/></div>
+<div class="hero-slide"><img src="assets/img/Carne1.jpg" alt="Carne" class="w-full h-full object-cover"/></div>
+<div class="hero-slide"><img src="assets/img/Carne2.jpg" alt="Carne" class="w-full h-full object-cover"/></div>
+<div class="hero-slide"><img src="assets/img/Carne3.jpg" alt="Carne" class="w-full h-full object-cover"/></div>
+<div class="hero-slide"><img src="assets/img/Pasta1.jpg" alt="Pasta" class="w-full h-full object-cover"/></div>
+<div class="hero-slide"><img src="assets/img/Pasta2.jpg" alt="Pasta" class="w-full h-full object-cover"/></div>
+</div>
+<!-- Dots fuera del área enmascarada para que nunca se corten -->
+<div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 z-30">
+<button class="carousel-dot active" aria-label="Slide 1"></button>
+<button class="carousel-dot" aria-label="Slide 2"></button>
+<button class="carousel-dot" aria-label="Slide 3"></button>
+<button class="carousel-dot" aria-label="Slide 4"></button>
+<button class="carousel-dot" aria-label="Slide 5"></button>
+<button class="carousel-dot" aria-label="Slide 6"></button>
+<button class="carousel-dot" aria-label="Slide 7"></button>
+<button class="carousel-dot" aria-label="Slide 8"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="relative w-full py-24 bg-background overflow-hidden scroll-mt-24" id="menu">
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="reveal text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative">
+<span data-en="Our Menu">Nuestro Menú</span>
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-inverse-primary rounded"></div>
+</h2>
+<p class="mt-8 text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto" data-en="A selection of our most requested dishes: artisanal pizzas, grilled meats and freshly made pastas.">Una selección de nuestros platos más pedidos: pizzas artesanales, carnes a la parrilla y pastas preparadas al momento.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Pizzas -->
+<div class="reveal">
+<h3 class="text-headline-md font-headline-md text-ash-white mb-8 border-b border-outline/20 pb-4" data-en="Featured Pizzas">Pizzas Destacadas</h3>
+<ul class="space-y-6">
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Margarita Rooster</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="The house classic, simple, fresh and always reliable.">La clásica de la casa, simple, fresca y siempre confiable.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢8.500</span>
+</li>
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Tres Carnes Pizza</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="A hearty option with intense, well-balanced flavor.">Una opción contundente con sabor intenso y balanceado.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢9.500</span>
+</li>
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Fire Rooster Pizza</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="The favorite for those looking for something more intense and special.">La favorita para quien busca algo más intenso y especial.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢8.950</span>
+</li>
+</ul>
+</div>
+<!-- Grill -->
+<div class="reveal" style="--reveal-index: 1">
+<h3 class="text-headline-md font-headline-md text-ash-white mb-8 border-b border-outline/20 pb-4" data-en="Grilled Meats">Carnes a la Parrilla</h3>
+<ul class="space-y-6">
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Ribeye Rooster</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="Juicy and tender cut, ideal for those looking for the best off the grill.">Corte jugoso y tierno, ideal para quienes buscan lo mejor de la parrilla.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢12.950</span>
+</li>
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Churrasco Rooster</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="A classic with a great sear and strong grilled flavor.">Un clásico con buen sellado y sabor fuerte a parrilla.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢11.950</span>
+</li>
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Costilla Rooster</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="Perfect for sharing, with the boldest style in the house.">Perfecta para compartir, con el estilo más robusto de la casa.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢8.500</span>
+</li>
+</ul>
+</div>
+<!-- Pastas -->
+<div class="reveal" style="--reveal-index: 2">
+<h3 class="text-headline-md font-headline-md text-ash-white mb-8 border-b border-outline/20 pb-4" data-en="Pastas">Pastas</h3>
+<ul class="space-y-6">
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Lomito Salsa de Hongos</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="One of the most complete and flavorful pastas on the menu.">Una de las pastas más completas y sabrosas del menú.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢8.500</span>
+</li>
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Pollo Pesto Pistacho</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="Creamy, aromatic and with a unique twist.">Cremosa, aromática y con un toque diferente.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢8.500</span>
+</li>
+<li class="flex justify-between items-start group transition-transform duration-300 hover:translate-x-1">
+<div class="max-w-[70%]">
+<h4 class="text-body-lg font-bold text-ash-white group-hover:text-inverse-primary transition-colors">Lomito / Camarones Salsa Rosada</h4>
+<p class="text-body-md text-on-surface-variant mt-1" data-en="A premium option for those who want pasta with protein.">Una opción más premium para quienes quieren pasta con proteína.</p>
+</div>
+<span class="text-body-lg font-bold text-tertiary-container">¢8.950</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<a class="btn-lift text-inverse-primary hover:text-inverse-primary/80 transition-colors font-label-md text-label-md flex items-center space-x-2 group border border-inverse-primary px-8 py-3 rounded hover:bg-inverse-primary/10" href="https://mercaditoarenal.com/menu/es/rooster-cafe-pizza-en-la-fortuna/#menu" target="_blank" rel="noopener noreferrer">
+<span data-en="View Full Menu">Ver Menú Completo</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="restaurant_menu">restaurant_menu</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Where We Are (Ubicación) Section -->
+<section class="relative w-full py-24 bg-surface-container-low overflow-hidden scroll-mt-24" id="ubicacion">
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="reveal">
+<h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative mb-6" data-en="Location">
+Ubicación
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-inverse-primary rounded"></div>
+</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-8" data-en="Join us at our flagship location. Experience the aroma of burning oak and sizzling meats as soon as you walk through the door.">
+                        Visitanos en nuestra ubicación. Sentí el aroma de la leña ardiendo y las carnes a la parrilla desde que cruzás la puerta.
+                    </p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-inverse-primary mt-1" data-icon="location_on">location_on</span>
+<div>
+<h4 class="font-bold text-ash-white" data-en="Address">Dirección</h4>
+<p class="text-on-surface-variant">400 mts Este del Parque Central de, Provincia de Alajuela, La Fortuna</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-inverse-primary mt-1" data-icon="call">call</span>
+<div>
+<h4 class="font-bold text-ash-white" data-en="Phone">Teléfono</h4>
+<p class="text-on-surface-variant">+506 8842-1596</p>
+</div>
+</div>
+</div>
+<a class="btn-lift bg-inverse-primary text-ash-white px-8 py-4 rounded-md font-label-md text-label-md uppercase tracking-wider hover:bg-inverse-primary/90 transition-all duration-300 inline-flex items-center space-x-2 group" href="https://maps.app.goo.gl/RdrZEHZeEjKoqZaf7" target="_blank" rel="noopener noreferrer">
+<span data-en="Open in Maps">Ver en el Mapa</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="directions">directions</span>
+</a>
+</div>
+<div class="reveal h-[400px] bg-surface-container rounded-xl overflow-hidden border border-outline/20 flex items-center justify-center relative" style="--reveal-index: 1">
+<iframe aria-label="Map to Rooster Pizza &amp; Grill" class="absolute inset-0 h-full w-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=10.4693211,-84.6500679&z=17&output=embed"></iframe>
+<a class="absolute bottom-4 left-4 z-10 bg-background/80 backdrop-blur-md border border-outline/20 text-ash-white px-4 py-2 rounded-md text-xs uppercase tracking-[0.2em] hover:bg-background/95 transition-colors" href="https://maps.app.goo.gl/RdrZEHZeEjKoqZaf7" target="_blank" rel="noopener noreferrer" data-en="View on Google Maps">Ver en Google Maps</a>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="relative w-full py-24 bg-background overflow-hidden scroll-mt-24" id="resenas">
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="reveal text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative">
+<span data-en="Reviews">Reseñas</span>
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-inverse-primary rounded"></div>
+</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="reveal card-hover bg-surface-container p-8 rounded-xl border border-outline/10">
+<div class="review-stars flex text-tertiary-container mb-4">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-6" data-en='"The pizza is simply delicious! Crispy, with fresh ingredients and a spectacular flavor. The service was incredible and the place is perfect for everyone. Definitely a must-visit."'>"¡La pizza es simplemente deliciosa! Tostadita, con ingredientes frescos y un sabor espectacular. El servicio fue increíble y el lugar es ideal para todo tipo de público. Definitivamente es un lugar que hay que visitar."</p>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-full flex items-center justify-center text-ash-white font-bold">C</div>
+<div>
+<h4 class="font-bold text-ash-white text-sm">Carmen Marrero</h4>
+<p class="text-xs text-on-surface-variant" data-en="1 year ago">Hace un año</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="reveal card-hover bg-surface-container p-8 rounded-xl border border-outline/10">
+<div class="review-stars flex text-tertiary-container mb-4">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-6" data-en='"I went to Rooster and tried the BBQ ribs — some of the best I&apos;ve had in La Fortuna. They practically melt in your mouth. I also had a cocktail from the Voodoo Bar, which I highly recommend."'>"Fui a comer a Rooster y probé unas costillas BBQ que han sido de las mejores que he comido en La Fortuna. Prácticamente se deshacen en la boca. Además, aproveché para tomar un cóctel del Voodoo Bar, que también recomiendo mucho."</p>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-full flex items-center justify-center text-ash-white font-bold">P</div>
+<div>
+<h4 class="font-bold text-ash-white text-sm">Pablo Murillo</h4>
+<p class="text-xs text-on-surface-variant" data-en="1 year ago">Hace un año</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="reveal card-hover bg-surface-container p-8 rounded-xl border border-outline/10">
+<div class="review-stars flex text-tertiary-container mb-4">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-6" data-en='"We ordered the Brazil pizza and it&apos;s the best pizza I&apos;ve ever tried. Delicious, with an excellent price for the portion. The sweet chili and garlic sauces are an absolute delight. Totally recommended when visiting Mercadito Arenal."'>"Pedimos una pizza Brazil y es la mejor pizza que he probado. Deliciosa, con un excelente precio para la porción. Las salsas de chile dulce y ajo son una verdadera delicia. Totalmente recomendado si visitas el Mercadito Arenal."</p>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-full flex items-center justify-center text-ash-white font-bold">R</div>
+<div>
+<h4 class="font-bold text-ash-white text-sm">Rodrigo Chávez</h4>
+<p class="text-xs text-on-surface-variant" data-en="2 years ago">Hace 2 años</p>
+</div>
+</div>
+</div>
+<!-- Review 4 -->
+<div class="reveal card-hover bg-surface-container p-8 rounded-xl border border-outline/10">
+<div class="review-stars flex text-tertiary-container mb-4">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-6" data-en='"The best restaurant inside the Mercadito. Their pizzas are excellent — thin crust with great flavor. The portions are good and they even let you add extra cheese, which is appreciated. Totally recommended!"'>"Es el mejor restaurante dentro del Mercadito. Las pizzas que ofrecen son muy buenas, con pasta delgada y un gran sabor. Las porciones están bien y además permiten agregar queso adicional, lo cual se aprecia. ¡Totalmente recomendado!"</p>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-full flex items-center justify-center text-ash-white font-bold">P</div>
+<div>
+<h4 class="font-bold text-ash-white text-sm">Paola Zamora</h4>
+<p class="text-xs text-on-surface-variant" data-en="6 months ago">Hace 6 meses</p>
+</div>
+</div>
+</div>
+<!-- Review 5 -->
+<div class="reveal card-hover bg-surface-container p-8 rounded-xl border border-outline/10">
+<div class="review-stars flex text-tertiary-container mb-4">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-6" data-en='"Delicious thin-crust pizza. The staff was very friendly and attentive. They also have vegetarian options and the wait time was under 10 minutes."'>"Deliciosa pizza de pasta delgada. El personal fue muy amable y atento. Además, cuentan con opciones vegetarianas y el tiempo de espera fue de menos de 10 minutos."</p>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-full flex items-center justify-center text-ash-white font-bold">M</div>
+<div>
+<h4 class="font-bold text-ash-white text-sm">Michael Salas CR</h4>
+<p class="text-xs text-on-surface-variant" data-en="4 months ago">Hace 4 meses</p>
+</div>
+</div>
+</div>
+<!-- Review 6 -->
+<div class="reveal card-hover bg-surface-container p-8 rounded-xl border border-outline/10">
+<div class="review-stars flex text-tertiary-container mb-4">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-6" data-en='"Excellent food and excellent price. We ordered two different pizzas and both were very high quality. No hidden charges — the price on the menu is exactly what you pay. Highly recommended."'>"Comida excelente y precio excelente. Pedimos dos pizzas diferentes y ambas fueron de mucha calidad. No hay cobros extras ocultos; el precio que aparece en el menú es el que se factura. Lo recomiendo."</p>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 bg-surface-container-high rounded-full flex items-center justify-center text-ash-white font-bold">B</div>
+<div>
+<h4 class="font-bold text-ash-white text-sm">Bristan Arrieta</h4>
+<p class="text-xs text-on-surface-variant" data-en="5 months ago">Hace 5 meses</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Videos Section -->
+<section class="relative w-full py-24 bg-surface-container-low overflow-hidden">
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center">
+
+<!-- Izquierda: Texto + Stats -->
+<div class="reveal flex flex-col justify-center">
+<h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative mb-8" data-en="The Rooster Experience">
+La Experiencia Rooster
+<div class="absolute -bottom-4 left-0 w-12 h-1 bg-inverse-primary rounded"></div>
+</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-12" data-en="This is how Rooster looks and feels from the inside. Real fire, real people, real flavor.">
+Así se ve y se siente Rooster desde adentro. Fuego real, gente real, sabor real.
+</p>
+<!-- Stats -->
+<div class="grid grid-cols-3 gap-6 border-t border-outline/20 pt-10">
+<div>
+<p class="text-4xl font-bold text-inverse-primary" data-counter data-count-to="2" data-prefix="+">+0</p>
+<p class="text-on-surface-variant mt-2 text-sm uppercase tracking-wider" data-en="Years in La Fortuna">Años en La Fortuna</p>
+</div>
+<div>
+<p class="text-4xl font-bold text-inverse-primary" data-counter data-count-to="3">0</p>
+<p class="text-on-surface-variant mt-2 text-sm uppercase tracking-wider" data-en="Menu categories">Categorías</p>
+</div>
+<div>
+<p class="text-4xl font-bold text-inverse-primary" data-counter data-count-to="4.5" data-decimals="1" data-prefix="★ ">★ 0.0</p>
+<p class="text-on-surface-variant mt-2 text-sm uppercase tracking-wider" data-en="Google rating">Google</p>
+</div>
+</div>
+</div>
+
+<!-- Derecha: Video -->
+<div class="reveal flex justify-center" style="--reveal-index: 1">
+<div class="relative w-full max-w-sm">
+<div class="absolute -inset-6 bg-inverse-primary/10 blur-3xl rounded-3xl pointer-events-none"></div>
+<div class="card-hover relative rounded-2xl overflow-hidden border border-outline/20 shadow-2xl">
+<video class="w-full h-auto" controls preload="metadata">
+<source src="assets/video/Rooster2video.mp4" type="video/mp4"/>
+Tu navegador no soporta video HTML5.
+</video>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- Contact Us Section -->
+<section class="relative w-full py-24 bg-background overflow-hidden scroll-mt-24" id="contacto">
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Título centrado -->
+<div class="reveal text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative" data-en="Contact Us">
+Contáctanos
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-inverse-primary rounded"></div>
+</h2>
+<p class="mt-8 text-body-lg font-body-lg text-on-surface-variant" data-en="Got a question or want to place an order? Reach out to us directly.">¿Tenés alguna duda o querés hacer un pedido? Contactanos directamente.</p>
+</div>
+<!-- Dos columnas -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+<!-- Izquierda: Horario + Redes -->
+<div class="reveal card-hover bg-surface-container rounded-xl p-10 border border-outline/10 flex flex-col gap-10">
+<div>
+<h3 class="text-label-md font-label-md uppercase tracking-[0.2em] text-ash-white mb-6" data-en="SERVICE HOURS">HORARIO DE SERVICIO</h3>
+<div class="space-y-2">
+<p class="font-bold text-ash-white" data-en="Monday to Sunday">Lunes a Domingo</p>
+<p class="text-on-surface-variant">12:00 pm – 10:00 pm</p>
+</div>
+</div>
+<div>
+<h3 class="text-label-md font-label-md uppercase tracking-[0.2em] text-ash-white mb-6" data-en="FOLLOW US">SÍGANOS</h3>
+<a href="https://www.instagram.com/roosterpizza_cr/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Rooster Pizza &amp; Grill" class="inline-flex items-center space-x-3 text-on-surface-variant hover:text-inverse-primary transition-colors group">
+<div class="w-12 h-12 bg-surface-container-high border border-outline/20 rounded-xl flex items-center justify-center group-hover:border-inverse-primary transition-colors">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg>
+</div>
+<span class="text-body-md" data-en="Follow us on Instagram">Síguenos en Instagram</span>
+</a>
+</div>
+</div>
+<!-- Derecha: WhatsApp -->
+<div class="reveal card-hover bg-surface-container rounded-xl p-10 border border-outline/10 flex flex-col justify-between" style="--reveal-index: 1">
+<div class="flex flex-col items-center text-center gap-6 flex-1 justify-center">
+<!-- Ícono WhatsApp -->
+<div class="w-20 h-20 rounded-full bg-inverse-primary/10 border border-inverse-primary/30 flex items-center justify-center">
+<svg class="w-10 h-10 text-inverse-primary" fill="currentColor" viewBox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+</svg>
+</div>
+<div>
+<h3 class="text-xl font-bold text-ash-white mb-2" data-en="Chat with us on WhatsApp">Escribinos por WhatsApp</h3>
+<p class="text-on-surface-variant text-body-md" data-en="Got a question or want to place an order? We'll reply right away.">¿Tenés una consulta o querés hacer un pedido? Te respondemos al instante.</p>
+</div>
+<p class="text-inverse-primary font-bold text-lg">+506 8842-1596</p>
+<a href="https://wa.me/50688421596?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20Rooster%20Pizza%20%26%20Grill%20%F0%9F%8D%95" target="_blank" rel="noopener noreferrer" class="btn-lift w-full flex items-center justify-center space-x-3 bg-inverse-primary hover:bg-inverse-primary/90 text-white font-bold px-8 py-4 rounded-md transition-all duration-300 shadow-[0_0_20px_rgba(237,28,50,0.4)] hover:shadow-[0_0_30px_rgba(237,28,50,0.6)] uppercase tracking-wider">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+</svg>
+<span data-en="Start Chat">Iniciar Chat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (About Us) -->
+<footer class="w-full py-10 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline/10">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+<!-- Col 1: Logo + tagline + redes -->
+<div>
+<img class="h-12 w-auto object-contain mb-4" src="assets/img/Logo_Rooster.png" alt="Rooster Pizza &amp; Grill logo"/>
+<p class="text-body-md text-on-surface-variant mb-5" data-en="Real wood. Real flavor. La Fortuna, Costa Rica.">Leña de verdad. Sabor de verdad. La Fortuna, Costa Rica.</p>
+<div class="flex items-center space-x-4">
+<a href="https://www.instagram.com/roosterpizza_cr/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-on-surface-variant hover:text-inverse-primary transition-colors">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<button id="share-btn" aria-label="Compartir sitio" class="text-on-surface-variant hover:text-inverse-primary transition-colors">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+</button>
+</div>
+</div>
+
+<!-- Col 2: Navegar -->
+<div>
+<h4 class="text-label-md font-bold text-ash-white mb-4 uppercase tracking-wider" data-en="Navigate">Navegar</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-inverse-primary transition-colors duration-200" href="#inicio" data-en="Home">Inicio</a></li>
+<li><a class="text-on-surface-variant hover:text-inverse-primary transition-colors duration-200" href="#menu">Menú</a></li>
+<li><a class="text-on-surface-variant hover:text-inverse-primary transition-colors duration-200" href="#resenas" data-en="Reviews">Reseñas</a></li>
+<li><a class="text-on-surface-variant hover:text-inverse-primary transition-colors duration-200" href="#contacto" data-en="Contact">Contacto</a></li>
+</ul>
+</div>
+
+<!-- Col 3: Contacto rápido -->
+<div>
+<h4 class="text-label-md font-bold text-ash-white mb-4 uppercase tracking-wider" data-en="Contact">Contacto</h4>
+<ul class="space-y-3">
+<li class="flex items-center space-x-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-inverse-primary text-sm" data-icon="call">call</span>
+<span>+506 8842-1596</span>
+</li>
+<li class="flex items-center space-x-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-inverse-primary text-sm" data-icon="schedule">schedule</span>
+<span data-en="Mon–Sun · 12:00 pm – 10:00 pm">Lun–Dom · 12:00 pm – 10:00 pm</span>
+</li>
+<li class="flex items-start space-x-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-inverse-primary text-sm mt-0.5" data-icon="location_on">location_on</span>
+<span data-en="400m East of Central Park, La Fortuna">400 mts Este del Parque Central, La Fortuna</span>
+</li>
+</ul>
+</div>
+
+</div>
+<!-- Copyright -->
+<div class="max-w-container-max mx-auto mt-8 pt-6 border-t border-outline/10 text-center">
+<p class="text-on-surface-variant text-sm">
+<span data-en="© 2026 Rooster Pizza &amp; Grill. Crafted with Fire.">© 2026 Rooster Pizza &amp; Grill. Hecho con Fuego.</span>
+</p>
+</div>
+</footer>
+<script src="assets/js/main.js?v=4"></script>
+</body></html>
