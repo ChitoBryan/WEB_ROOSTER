@@ -99,20 +99,21 @@
 /* ── Nav activo según sección visible ──────────────────── */
 (function () {
   var sections = document.querySelectorAll('main section[id]');
-  var navLinks = document.querySelectorAll('.nav-underline[href^="#"]');
+  var navLinks = document.querySelectorAll('.nav-underline[href^="#"], .mobile-nav-link[href^="#"]');
   if (!sections.length || !navLinks.length || !('IntersectionObserver' in window)) return;
 
-  var linkById = {};
+  var linksById = {};
   navLinks.forEach(function (link) {
-    linkById[link.getAttribute('href').slice(1)] = link;
+    var id = link.getAttribute('href').slice(1);
+    (linksById[id] = linksById[id] || []).push(link);
   });
 
   var sectionObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      var link = linkById[entry.target.id];
-      if (!link || !entry.isIntersecting) return;
+      var links = linksById[entry.target.id];
+      if (!links || !entry.isIntersecting) return;
       navLinks.forEach(function (l) { l.classList.remove('nav-active'); });
-      link.classList.add('nav-active');
+      links.forEach(function (l) { l.classList.add('nav-active'); });
     });
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
 

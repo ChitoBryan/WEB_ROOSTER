@@ -76,7 +76,7 @@
                       "margin-mobile": "16px",
                       "gutter": "24px",
                       "unit": "8px",
-                      "container-max": "1600px"
+                      "container-max": "100%"
               },
               "fontFamily": {
                       "headline-md": [
@@ -204,7 +204,7 @@
 </div>
 <main class="pt-24">
 <!-- Hero Section -->
-<section class="relative w-full pb-16 min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-24" id="inicio">
+<section class="relative w-full pb-4 sm:pb-6 lg:pb-12 min-h-[480px] lg:min-h-[560px] flex items-center justify-center overflow-hidden scroll-mt-24" id="inicio">
 <!-- Background Texture/Image -->
 <div class="absolute inset-0 z-0 bg-background">
 <div class="absolute inset-0 hero-texture opacity-60 mix-blend-overlay" data-alt="Dark, moody, rough charcoal texture, simulating a hot grill or pizza oven interior, deep blacks and subtle grey highlights, high resolution, photorealistic."></div>
@@ -212,8 +212,8 @@
 <div class="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent"></div>
 </div>
 <!-- Content -->
-<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-start">
-<div class="flex flex-col items-start space-y-6 max-w-xl">
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col lg:flex-row gap-gutter items-center">
+<div class="flex flex-col items-start space-y-6 max-w-xl w-full lg:w-auto lg:flex-shrink-0">
 <h1 class="text-headline-lg-mobile md:text-headline-xl font-headline-lg-mobile md:font-headline-xl text-ash-white leading-tight drop-shadow-lg">
 <span data-en="Pizza, Meat & Pasta,">Pizza, Carne y Pasta,</span> <br/>
 <span class="text-inverse-primary relative inline-block">
@@ -230,7 +230,7 @@
 </a>
 </div>
 <!-- Hero Carousel -->
-<div class="relative h-[400px] md:h-[600px] w-full flex items-center justify-center">
+<div class="relative h-[320px] sm:h-[420px] lg:h-[560px] w-full lg:flex-1 flex items-center justify-center">
 <div class="absolute w-3/4 h-3/4 bg-inverse-primary/20 blur-[100px] rounded-full z-0"></div>
 <div class="hero-carousel relative z-10 w-full h-full rounded-2xl overflow-hidden shadow-2xl">
 <div class="hero-slide active"><img src="assets/img/Pizza1.jpg" alt="Pizza" class="w-full h-full object-cover"/></div>
@@ -257,7 +257,7 @@
 </div>
 </section>
 <!-- Menu Section -->
-<section class="relative w-full py-24 bg-background overflow-hidden scroll-mt-24" id="menu">
+<section class="relative w-full pt-12 pb-24 lg:py-24 bg-background overflow-hidden scroll-mt-24" id="menu">
 <div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="reveal text-center mb-16">
 <h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative">
@@ -266,7 +266,7 @@
 </h2>
 <p class="mt-8 text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto" data-en="A selection of our most requested dishes: artisanal pizzas, grilled meats and freshly made pastas.">Una selección de nuestros platos más pedidos: pizzas artesanales, carnes a la parrilla y pastas preparadas al momento.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
 <!-- Pizzas -->
 <div class="reveal">
 <h3 class="text-headline-md font-headline-md text-ash-white mb-8 border-b border-outline/20 pb-4" data-en="Featured Pizzas">Pizzas Destacadas</h3>
@@ -359,8 +359,8 @@
 </section>
 <!-- Where We Are (Ubicación) Section -->
 <section class="relative w-full py-24 bg-surface-container-low overflow-hidden scroll-mt-24" id="ubicacion">
-<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-<div class="reveal">
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="reveal text-center lg:text-left">
 <h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative mb-6" data-en="Location">
 Ubicación
 <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-inverse-primary rounded"></div>
@@ -368,16 +368,16 @@ Ubicación
 <p class="text-body-lg font-body-lg text-on-surface-variant mb-8" data-en="Join us at our flagship location. Experience the aroma of burning oak and sizzling meats as soon as you walk through the door.">
                         Visitanos en nuestra ubicación. Sentí el aroma de la leña ardiendo y las carnes a la parrilla desde que cruzás la puerta.
                     </p>
-<div class="space-y-4 mb-8">
-<div class="flex items-start space-x-4">
-<span class="material-symbols-outlined text-inverse-primary mt-1" data-icon="location_on">location_on</span>
+<div class="space-y-4 mb-8 bg-surface-container border border-outline/10 rounded-xl p-6">
+<div class="flex flex-col items-center gap-2 text-center lg:flex-row lg:items-start lg:text-left lg:gap-4">
+<span class="material-symbols-outlined text-inverse-primary lg:mt-1" data-icon="location_on">location_on</span>
 <div>
 <h4 class="font-bold text-ash-white" data-en="Address">Dirección</h4>
 <p class="text-on-surface-variant">400 mts Este del Parque Central de, Provincia de Alajuela, La Fortuna</p>
 </div>
 </div>
-<div class="flex items-start space-x-4">
-<span class="material-symbols-outlined text-inverse-primary mt-1" data-icon="call">call</span>
+<div class="flex flex-col items-center gap-2 text-center lg:flex-row lg:items-start lg:text-left lg:gap-4">
+<span class="material-symbols-outlined text-inverse-primary lg:mt-1" data-icon="call">call</span>
 <div>
 <h4 class="font-bold text-ash-white" data-en="Phone">Teléfono</h4>
 <p class="text-on-surface-variant">+506 8842-1596</p>
@@ -389,7 +389,7 @@ Ubicación
 <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="directions">directions</span>
 </a>
 </div>
-<div class="reveal h-[400px] bg-surface-container rounded-xl overflow-hidden border border-outline/20 flex items-center justify-center relative" style="--reveal-index: 1">
+<div class="reveal h-[300px] sm:h-[360px] lg:h-[400px] bg-surface-container rounded-xl overflow-hidden border border-outline/20 flex items-center justify-center relative" style="--reveal-index: 1">
 <iframe aria-label="Map to Rooster Pizza &amp; Grill" class="absolute inset-0 h-full w-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=10.4693211,-84.6500679&z=17&output=embed"></iframe>
 <a class="absolute bottom-4 left-4 z-10 bg-background/80 backdrop-blur-md border border-outline/20 text-ash-white px-4 py-2 rounded-md text-xs uppercase tracking-[0.2em] hover:bg-background/95 transition-colors" href="https://maps.app.goo.gl/RdrZEHZeEjKoqZaf7" target="_blank" rel="noopener noreferrer" data-en="View on Google Maps">Ver en Google Maps</a>
 </div>
@@ -404,7 +404,7 @@ Ubicación
 <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-inverse-primary rounded"></div>
 </h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 <!-- Review 1 -->
 <div class="reveal card-hover bg-surface-container p-8 rounded-xl border border-outline/10">
 <div class="review-stars flex text-tertiary-container mb-4">
@@ -519,7 +519,7 @@ Ubicación
 <!-- Videos Section -->
 <section class="relative w-full py-24 bg-surface-container-low overflow-hidden">
 <div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center">
+<div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-center">
 
 <!-- Izquierda: Texto + Stats -->
 <div class="reveal flex flex-col justify-center">
@@ -531,18 +531,18 @@ La Experiencia Rooster
 Así se ve y se siente Rooster desde adentro. Fuego real, gente real, sabor real.
 </p>
 <!-- Stats -->
-<div class="grid grid-cols-3 gap-6 border-t border-outline/20 pt-10">
+<div class="grid grid-cols-3 gap-3 sm:gap-6 border-t border-outline/20 pt-10">
 <div>
-<p class="text-4xl font-bold text-inverse-primary" data-counter data-count-to="2" data-prefix="+">+0</p>
-<p class="text-on-surface-variant mt-2 text-sm uppercase tracking-wider" data-en="Years in La Fortuna">Años en La Fortuna</p>
+<p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-inverse-primary" data-counter data-count-to="2" data-prefix="+">+0</p>
+<p class="text-on-surface-variant mt-2 text-xs sm:text-sm uppercase tracking-wider" data-en="Years in La Fortuna">Años en La Fortuna</p>
 </div>
 <div>
-<p class="text-4xl font-bold text-inverse-primary" data-counter data-count-to="3">0</p>
-<p class="text-on-surface-variant mt-2 text-sm uppercase tracking-wider" data-en="Menu categories">Categorías</p>
+<p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-inverse-primary" data-counter data-count-to="3">0</p>
+<p class="text-on-surface-variant mt-2 text-xs sm:text-sm uppercase tracking-wider" data-en="Menu categories">Categorías</p>
 </div>
 <div>
-<p class="text-4xl font-bold text-inverse-primary" data-counter data-count-to="4.5" data-decimals="1" data-prefix="★ ">★ 0.0</p>
-<p class="text-on-surface-variant mt-2 text-sm uppercase tracking-wider" data-en="Google rating">Google</p>
+<p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-inverse-primary" data-counter data-count-to="4.5" data-decimals="1" data-prefix="★ ">★ 0.0</p>
+<p class="text-on-surface-variant mt-2 text-xs sm:text-sm uppercase tracking-wider" data-en="Google rating">Google</p>
 </div>
 </div>
 </div>
@@ -575,7 +575,7 @@ Contáctanos
 <p class="mt-8 text-body-lg font-body-lg text-on-surface-variant" data-en="Got a question or want to place an order? Reach out to us directly.">¿Tenés alguna duda o querés hacer un pedido? Contactanos directamente.</p>
 </div>
 <!-- Dos columnas -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 <!-- Izquierda: Horario + Redes -->
 <div class="reveal card-hover bg-surface-container rounded-xl p-10 border border-outline/10 flex flex-col gap-10">
 <div>

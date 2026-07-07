@@ -522,6 +522,11 @@ textarea:focus {
   transform: translateX(-50%) scaleX(1);
 }
 
+.mobile-nav-link.nav-active {
+  color: var(--brand);
+  border-color: rgba(237, 28, 50, 0.4);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(48px) scale(0.96);
