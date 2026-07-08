@@ -7,7 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Hanken+Grotesk:wght@400..700&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css?v=5" rel="stylesheet"/>
+<link href="styles.css?v=9" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -204,7 +204,7 @@
 </div>
 <main class="pt-24">
 <!-- Hero Section -->
-<section class="relative w-full pt-8 pb-8 lg:py-10 flex items-stretch overflow-hidden scroll-mt-24" id="inicio">
+<section class="relative w-full pt-8 pb-8 lg:py-10 lg:min-h-screen flex items-stretch overflow-hidden scroll-mt-24" id="inicio">
 <!-- Background Texture/Image -->
 <div class="absolute inset-0 z-0 bg-background">
 <div class="absolute inset-0 hero-texture opacity-60 mix-blend-overlay" data-alt="Dark, moody, rough charcoal texture, simulating a hot grill or pizza oven interior, deep blacks and subtle grey highlights, high resolution, photorealistic."></div>
@@ -368,7 +368,7 @@ Ubicación
 <p class="text-body-lg font-body-lg text-on-surface-variant mb-8" data-en="Join us at our flagship location. Experience the aroma of burning oak and sizzling meats as soon as you walk through the door.">
                         Visitanos en nuestra ubicación. Sentí el aroma de la leña ardiendo y las carnes a la parrilla desde que cruzás la puerta.
                     </p>
-<div class="space-y-4 mb-8 bg-surface-container border border-outline/10 rounded-xl p-6">
+<div class="space-y-4 mb-8 bg-surface-container border border-outline/10 rounded-xl p-6 lg:w-fit">
 <div class="flex flex-col items-center gap-2 text-center lg:flex-row lg:items-start lg:text-left lg:gap-4">
 <span class="material-symbols-outlined text-inverse-primary lg:mt-1" data-icon="location_on">location_on</span>
 <div>
@@ -625,7 +625,7 @@ Contáctanos
 </main>
 <!-- Footer (About Us) -->
 <footer class="w-full py-10 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline/10">
-<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1.3fr] gap-10 items-start">
 
 <!-- Col 1: Logo + tagline + redes -->
 <div>
@@ -679,5 +679,5 @@ Contáctanos
 </p>
 </div>
 </footer>
-<script src="assets/js/main.js?v=5"></script>
+<script src="assets/js/main.js?v=8"></script>
 </body></html>

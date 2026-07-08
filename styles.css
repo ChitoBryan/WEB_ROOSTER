@@ -27,6 +27,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Compensa la altura del header fijo (h-24 = 6rem) al navegar con anclas #id */
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
 body {
   margin: 0;
   font-family: "Hanken Grotesk", sans-serif;
@@ -460,6 +465,30 @@ textarea:focus {
 .btn-lift:focus-visible {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 14px 32px rgba(237, 28, 50, 0.4);
+}
+
+/* En pantallas touch (sin hover) las animaciones se ejecutan solas para que
+   se noten en móvil: el destello barre en loop y un glow rojo late suave.
+   No se anima el lift/scale para que no "rebote". Web queda intacto. */
+@media (hover: none) {
+  @keyframes btn-auto-shine {
+    0%   { left: -60%; }
+    18%  { left: 130%; }
+    100% { left: 130%; }
+  }
+
+  @keyframes btn-auto-glow {
+    0%, 100% { box-shadow: 0 4px 14px rgba(237, 28, 50, 0.15); }
+    50%      { box-shadow: 0 8px 26px rgba(237, 28, 50, 0.45); }
+  }
+
+  .btn-lift::before {
+    animation: btn-auto-shine 4.5s ease-in-out infinite;
+  }
+
+  .btn-lift {
+    animation: btn-auto-glow 3s ease-in-out infinite;
+  }
 }
 
 .card-hover {
