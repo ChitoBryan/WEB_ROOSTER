@@ -7,7 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Hanken+Grotesk:wght@400..700&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css?v=4" rel="stylesheet"/>
+<link href="styles.css?v=5" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -204,7 +204,7 @@
 </div>
 <main class="pt-24">
 <!-- Hero Section -->
-<section class="relative w-full pb-4 sm:pb-6 lg:pb-12 min-h-[480px] lg:min-h-[560px] flex items-center justify-center overflow-hidden scroll-mt-24" id="inicio">
+<section class="relative w-full pt-8 pb-8 lg:py-10 flex items-stretch overflow-hidden scroll-mt-24" id="inicio">
 <!-- Background Texture/Image -->
 <div class="absolute inset-0 z-0 bg-background">
 <div class="absolute inset-0 hero-texture opacity-60 mix-blend-overlay" data-alt="Dark, moody, rough charcoal texture, simulating a hot grill or pizza oven interior, deep blacks and subtle grey highlights, high resolution, photorealistic."></div>
@@ -212,9 +212,9 @@
 <div class="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent"></div>
 </div>
 <!-- Content -->
-<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col lg:flex-row gap-gutter items-center">
-<div class="flex flex-col items-start space-y-6 max-w-xl w-full lg:w-auto lg:flex-shrink-0">
-<h1 class="text-headline-lg-mobile md:text-headline-xl font-headline-lg-mobile md:font-headline-xl text-ash-white leading-tight drop-shadow-lg">
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-1 flex-col lg:flex-row gap-gutter items-center lg:items-stretch">
+<div class="flex flex-col justify-center items-start space-y-6 max-w-xl w-full lg:w-auto lg:flex-shrink-0">
+<h1 class="text-headline-lg-mobile md:text-headline-lg xl:text-headline-xl font-headline-lg-mobile md:font-headline-lg xl:font-headline-xl text-ash-white leading-tight drop-shadow-lg">
 <span data-en="Pizza, Meat & Pasta,">Pizza, Carne y Pasta,</span> <br/>
 <span class="text-inverse-primary relative inline-block">
 <span data-en="Authentic Flavor">Sabor Auténtico</span>
@@ -230,7 +230,7 @@
 </a>
 </div>
 <!-- Hero Carousel -->
-<div class="relative h-[320px] sm:h-[420px] lg:h-[560px] w-full lg:flex-1 flex items-center justify-center">
+<div class="relative h-[320px] sm:h-[420px] lg:h-full w-full lg:flex-1 flex items-center justify-center">
 <div class="absolute w-3/4 h-3/4 bg-inverse-primary/20 blur-[100px] rounded-full z-0"></div>
 <div class="hero-carousel relative z-10 w-full h-full rounded-2xl overflow-hidden shadow-2xl">
 <div class="hero-slide active"><img src="assets/img/Pizza1.jpg" alt="Pizza" class="w-full h-full object-cover"/></div>
@@ -257,7 +257,7 @@
 </div>
 </section>
 <!-- Menu Section -->
-<section class="relative w-full pt-12 pb-24 lg:py-24 bg-background overflow-hidden scroll-mt-24" id="menu">
+<section class="relative w-full pt-12 pb-24 lg:pt-12 lg:pb-24 bg-background overflow-hidden scroll-mt-24" id="menu">
 <div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="reveal text-center mb-16">
 <h2 class="text-headline-lg font-headline-lg text-inverse-primary inline-block relative">
@@ -373,7 +373,7 @@ Ubicación
 <span class="material-symbols-outlined text-inverse-primary lg:mt-1" data-icon="location_on">location_on</span>
 <div>
 <h4 class="font-bold text-ash-white" data-en="Address">Dirección</h4>
-<p class="text-on-surface-variant">400 mts Este del Parque Central de, Provincia de Alajuela, La Fortuna</p>
+<p class="text-on-surface-variant" data-en="400m East of Central Park, Alajuela Province, La Fortuna">400 mts Este del Parque Central de, Provincia de Alajuela, La Fortuna</p>
 </div>
 </div>
 <div class="flex flex-col items-center gap-2 text-center lg:flex-row lg:items-start lg:text-left lg:gap-4">
@@ -679,5 +679,5 @@ Contáctanos
 </p>
 </div>
 </footer>
-<script src="assets/js/main.js?v=4"></script>
+<script src="assets/js/main.js?v=5"></script>
 </body></html>

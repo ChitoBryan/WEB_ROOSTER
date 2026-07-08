@@ -578,11 +578,11 @@ textarea:focus {
 /* ── Hero Carousel ─────────────────────────────────── */
 .hero-carousel {
   -webkit-mask-image:
-    linear-gradient(to right,  transparent 0%,   black 14%, black 86%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%,   black 10%, black 90%, transparent 100%);
+    linear-gradient(to right,  transparent 0, black 28px, black calc(100% - 28px), transparent 100%),
+    linear-gradient(to bottom, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
   mask-image:
-    linear-gradient(to right,  transparent 0%,   black 14%, black 86%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%,   black 10%, black 90%, transparent 100%);
+    linear-gradient(to right,  transparent 0, black 28px, black calc(100% - 28px), transparent 100%),
+    linear-gradient(to bottom, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
 }
@@ -608,4 +608,68 @@ textarea:focus {
   background: #ed1c32;
   width: 24px;
   border-radius: 9999px;
+}
+
+/* Desktop zoom stability for hero without constraining global width */
+@media (min-width: 1024px) {
+  #inicio {
+    min-height: clamp(520px, calc(100svh - 6rem), 760px);
+  }
+
+  #inicio > .relative.z-10 {
+    min-height: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 760px) {
+  #inicio {
+    min-height: clamp(500px, calc(100svh - 8rem), 620px);
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 690px) {
+  #inicio {
+    min-height: clamp(460px, calc(100svh - 7rem), 590px);
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  #inicio > .relative.z-10 {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) and (max-height: 760px) {
+  #inicio {
+    min-height: clamp(450px, calc(100svh - 6.7rem), 560px);
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  #inicio > .relative.z-10 {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  #inicio > .relative.z-10 > div:first-child {
+    width: auto;
+    flex-shrink: 0;
+    max-width: 36rem;
+  }
+
+  #inicio > .relative.z-10 > div:last-child {
+    flex: 1 1 auto;
+    min-height: 340px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1285px) and (min-height: 680px) and (max-height: 710px) {
+  #inicio > .relative.z-10 > div:first-child > a.btn-lift {
+    margin-top: 0 !important;
+    position: relative;
+    top: -8px;
+  }
 }
